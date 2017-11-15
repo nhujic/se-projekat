@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <%- include partials/head.ejs %>
+  </head>
+  <body>
+    <h1 id="testnitag"><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+
+    <% for (var i = 0; i<2; i++) {%>
+      <p><%= title %></p>
+    <%}%>
+
+    <div class="jumbotron">
+
+      <button class="btn-success btn-lg" onclick="uradiNesto()">
+        DUGMIC
+      </button>
+
+      <button class="btn-danger btn-lg" onclick="uradiNestoSaServerom()">
+        DUGMIC SERVER
+      </button>
+
+    </div>
+
+
+  </body>
+</html>
